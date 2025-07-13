@@ -697,11 +697,63 @@ For issues and questions:
 2. Review Wireshark's plugin documentation
 3. Submit an issue with detailed error information
 
+## Repository Structure
+
+After cleanup, the repository contains only the essential files:
+
+### 📁 **Core Plugin Files**
+- **`kmeans_analyzer_simple.lua`** - Final working Wireshark plugin with Lua conflict prevention
+- **`wireshark_kmeans_backend_enhanced.py`** - Enhanced Python backend with graph generation
+
+### 🛠️ **Analysis Scripts**
+- **`simple_analysis.sh`** - Main Wireshark integration script with auto-detection
+- **`analyze_real_data_enhanced.sh`** - Standalone enhanced analysis script
+- **`export_and_analyze.sh`** - Manual CSV export and analysis workflow
+
+### 🧹 **Lua Conflict Prevention Tools**
+- **`tshark_clean.sh`** - Clean tshark wrapper (eliminates Lua errors)
+- **`run_wireshark_clean.sh`** - Clean Wireshark launcher
+- **`run_analysis_isolated.sh`** - Isolated Python environment runner
+- **`fix_matplotlib_lua_conflict.sh`** - Automatic matplotlib conflict fixer
+
+### ⚙️ **Installation Scripts**  
+- **`install_plugin.sh`** - Basic installation
+- **`install_plugin_enhanced.sh`** - Enhanced installer for externally-managed environments
+- **`install_plugin_fixed.sh`** - Fixed installer with comprehensive error handling
+
+### 📋 **Configuration & Documentation**
+- **`README.md`** - Complete documentation and usage guide
+- **`requirements.txt`** - Full Python dependencies
+- **`requirements_minimal.txt`** - Minimal dependencies (without matplotlib)
+- **`wiresharkanalyzer.py`** - Original source analyzer (reference)
+
 ## Changelog
+
+### Version 4.1.0 (Current) - July 2025
+- ✅ **Complete Lua Conflict Elimination** - Zero matplotlib/Wireshark Lua errors
+- ✅ **Automatic Graph Generation** - 4 professional visualization graphs created automatically
+- ✅ **Auto-Opening Graphs** - Generated graphs open automatically in default image viewer
+- ✅ **Enhanced Real Data Analysis** - Works with currently opened Wireshark capture files
+- ✅ **Clean Environment Isolation** - Completely isolated Python/Lua environments
+- ✅ **Repository Cleanup** - Streamlined to essential files only
+- ✅ **Cross-Platform Graph Support** - Works on macOS, Linux, and Windows
+- ✅ **Production Ready** - Stable, reliable, and conflict-free operation
+
+### Version 3.0.0 
+- Real packet data collection from opened capture files
+- tshark integration for actual packet analysis
+- Smart fallback between real and sample data
+- Enhanced protocol detection
+
+### Version 2.0.0
+- Wireshark API compatibility fixes
+- Virtual environment support
+- Enhanced error handling
+- Multiple installation methods
 
 ### Version 1.0.0
 - Initial release
-- K-means clustering analysis
+- K-means clustering analysis  
 - Real-time and batch processing
 - Anomaly detection
 - Wireshark GUI integration
