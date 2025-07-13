@@ -1,0 +1,2665 @@
+{
+  "analysis_info": {
+    "num_clusters": 5,
+    "total_packets": 385,
+    "silhouette_score": 0.5616577852526033,
+    "num_anomalies": 25
+  },
+  "cluster_analysis": {
+    "num_clusters": 5,
+    "total_packets": 385,
+    "clusters": [
+      {
+        "id": 0,
+        "size": 100,
+        "percentage": 25.97402597402597,
+        "avg_packet_length": 119.18,
+        "avg_anomaly_score": 0.23580735550551332,
+        "top_protocols": {
+          "DNS": 100
+        },
+        "top_sources": {
+          "192.168.1.10": 50,
+          "8.8.8.8": 50
+        },
+        "top_destinations": {
+          "8.8.8.8": 50,
+          "192.168.1.10": 50
+        }
+      },
+      {
+        "id": 1,
+        "size": 100,
+        "percentage": 25.97402597402597,
+        "avg_packet_length": 1013.89,
+        "avg_anomaly_score": 0.05525219008281045,
+        "top_protocols": {
+          "HTTP": 100
+        },
+        "top_sources": {
+          "8.8.8.8": 100
+        },
+        "top_destinations": {
+          "192.168.1.10": 100
+        }
+      },
+      {
+        "id": 2,
+        "size": 80,
+        "percentage": 20.77922077922078,
+        "avg_packet_length": 552.9625,
+        "avg_anomaly_score": 0.2716329647045609,
+        "top_protocols": {
+          "TCP": 60,
+          "ICMP": 20
+        },
+        "top_sources": {
+          "192.168.1.10": 45,
+          "192.168.1.20": 25,
+          "8.8.8.8": 10
+        },
+        "top_destinations": {
+          "203.0.113.15": 30,
+          "198.51.100.42": 25,
+          "8.8.8.8": 10
+        }
+      },
+      {
+        "id": 3,
+        "size": 100,
+        "percentage": 25.97402597402597,
+        "avg_packet_length": 101.57,
+        "avg_anomaly_score": 0.016589918661753533,
+        "top_protocols": {
+          "HTTP": 100
+        },
+        "top_sources": {
+          "192.168.1.10": 100
+        },
+        "top_destinations": {
+          "8.8.8.8": 100
+        }
+      },
+      {
+        "id": 4,
+        "size": 5,
+        "percentage": 1.2987012987012987,
+        "avg_packet_length": 60.0,
+        "avg_anomaly_score": 0.011782973534661284,
+        "top_protocols": {
+          "TCP": 5
+        },
+        "top_sources": {
+          "203.0.113.99": 5
+        },
+        "top_destinations": {
+          "192.168.1.10": 5
+        }
+      }
+    ]
+  },
+  "anomalies": [
+    {
+      "packet_number": 247,
+      "anomaly_score": 0.4079094465877987,
+      "cluster_id": 0,
+      "protocol": "DNS",
+      "source": "192.168.1.10",
+      "destination": "8.8.8.8",
+      "length": 106,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 255,
+      "anomaly_score": 0.4940878697933318,
+      "cluster_id": 0,
+      "protocol": "DNS",
+      "source": "192.168.1.10",
+      "destination": "8.8.8.8",
+      "length": 88,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 257,
+      "anomaly_score": 0.4871450697755954,
+      "cluster_id": 0,
+      "protocol": "DNS",
+      "source": "192.168.1.10",
+      "destination": "8.8.8.8",
+      "length": 100,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 265,
+      "anomaly_score": 0.5776051028412809,
+      "cluster_id": 0,
+      "protocol": "DNS",
+      "source": "192.168.1.10",
+      "destination": "8.8.8.8",
+      "length": 83,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 269,
+      "anomaly_score": 0.5447062208792719,
+      "cluster_id": 0,
+      "protocol": "DNS",
+      "source": "192.168.1.10",
+      "destination": "8.8.8.8",
+      "length": 78,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 279,
+      "anomaly_score": 0.45831965702541855,
+      "cluster_id": 0,
+      "protocol": "DNS",
+      "source": "192.168.1.10",
+      "destination": "8.8.8.8",
+      "length": 94,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 295,
+      "anomaly_score": 0.5576287064571923,
+      "cluster_id": 0,
+      "protocol": "DNS",
+      "source": "192.168.1.10",
+      "destination": "8.8.8.8",
+      "length": 116,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 297,
+      "anomaly_score": 0.8139699652553465,
+      "cluster_id": 0,
+      "protocol": "DNS",
+      "source": "192.168.1.10",
+      "destination": "8.8.8.8",
+      "length": 106,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 299,
+      "anomaly_score": 0.5599885135553677,
+      "cluster_id": 0,
+      "protocol": "DNS",
+      "source": "192.168.1.10",
+      "destination": "8.8.8.8",
+      "length": 87,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 302,
+      "anomaly_score": 0.44543742094125904,
+      "cluster_id": 2,
+      "protocol": "TCP",
+      "source": "192.168.1.10",
+      "destination": "203.0.113.15",
+      "length": 153,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 357,
+      "anomaly_score": 0.9999798595632095,
+      "cluster_id": 2,
+      "protocol": "TCP",
+      "source": "192.168.1.10",
+      "destination": "203.0.113.99",
+      "length": 60,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 359,
+      "anomaly_score": 0.9999828072443692,
+      "cluster_id": 2,
+      "protocol": "TCP",
+      "source": "192.168.1.10",
+      "destination": "203.0.113.99",
+      "length": 60,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 361,
+      "anomaly_score": 0.9999891066069609,
+      "cluster_id": 2,
+      "protocol": "TCP",
+      "source": "192.168.1.10",
+      "destination": "203.0.113.99",
+      "length": 60,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 363,
+      "anomaly_score": 0.9999993905013973,
+      "cluster_id": 2,
+      "protocol": "TCP",
+      "source": "192.168.1.10",
+      "destination": "203.0.113.99",
+      "length": 60,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 365,
+      "anomaly_score": 1.0,
+      "cluster_id": 2,
+      "protocol": "TCP",
+      "source": "192.168.1.10",
+      "destination": "203.0.113.99",
+      "length": 60,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 366,
+      "anomaly_score": 0.4385511121104994,
+      "cluster_id": 2,
+      "protocol": "ICMP",
+      "source": "192.168.1.10",
+      "destination": "8.8.8.8",
+      "length": 64,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 370,
+      "anomaly_score": 0.6632519394868414,
+      "cluster_id": 2,
+      "protocol": "ICMP",
+      "source": "192.168.1.10",
+      "destination": "8.8.8.8",
+      "length": 64,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 379,
+      "anomaly_score": 0.3517371410066163,
+      "cluster_id": 2,
+      "protocol": "ICMP",
+      "source": "8.8.8.8",
+      "destination": "192.168.1.10",
+      "length": 64,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 381,
+      "anomaly_score": 0.35206836246278833,
+      "cluster_id": 2,
+      "protocol": "ICMP",
+      "source": "8.8.8.8",
+      "destination": "192.168.1.10",
+      "length": 64,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 385,
+      "anomaly_score": 0.3518683342122736,
+      "cluster_id": 2,
+      "protocol": "ICMP",
+      "source": "8.8.8.8",
+      "destination": "192.168.1.10",
+      "length": 64,
+      "reason": "High anomaly score"
+    },
+    {
+      "packet_number": 356,
+      "anomaly_score": 0.009706649922535233,
+      "cluster_id": 4,
+      "protocol": "TCP",
+      "source": "203.0.113.99",
+      "destination": "192.168.1.10",
+      "length": 60,
+      "reason": "Small cluster (size: 5)"
+    },
+    {
+      "packet_number": 358,
+      "anomaly_score": 0.0011607950771745138,
+      "cluster_id": 4,
+      "protocol": "TCP",
+      "source": "203.0.113.99",
+      "destination": "192.168.1.10",
+      "length": 60,
+      "reason": "Small cluster (size: 5)"
+    },
+    {
+      "packet_number": 360,
+      "anomaly_score": 0.0068478432283073905,
+      "cluster_id": 4,
+      "protocol": "TCP",
+      "source": "203.0.113.99",
+      "destination": "192.168.1.10",
+      "length": 60,
+      "reason": "Small cluster (size: 5)"
+    },
+    {
+      "packet_number": 362,
+      "anomaly_score": 0.02518726772426294,
+      "cluster_id": 4,
+      "protocol": "TCP",
+      "source": "203.0.113.99",
+      "destination": "192.168.1.10",
+      "length": 60,
+      "reason": "Small cluster (size: 5)"
+    },
+    {
+      "packet_number": 364,
+      "anomaly_score": 0.016012311721026337,
+      "cluster_id": 4,
+      "protocol": "TCP",
+      "source": "203.0.113.99",
+      "destination": "192.168.1.10",
+      "length": 60,
+      "reason": "Small cluster (size: 5)"
+    }
+  ],
+  "packet_results": [
+    {
+      "packet_number": 1,
+      "cluster_id": 3,
+      "anomaly_score": 0.02745018451015404,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 2,
+      "cluster_id": 1,
+      "anomaly_score": 0.04702788088784534,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 3,
+      "cluster_id": 3,
+      "anomaly_score": 0.022448435134777074,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 4,
+      "cluster_id": 1,
+      "anomaly_score": 0.025286062462123365,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 5,
+      "cluster_id": 3,
+      "anomaly_score": 0.026388634301163807,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 6,
+      "cluster_id": 1,
+      "anomaly_score": 0.05062306712427548,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 7,
+      "cluster_id": 3,
+      "anomaly_score": 0.04655301694416508,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 8,
+      "cluster_id": 1,
+      "anomaly_score": 0.07688722021225672,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 9,
+      "cluster_id": 3,
+      "anomaly_score": 0.06877641661176002,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 10,
+      "cluster_id": 1,
+      "anomaly_score": 0.11637472123285267,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 11,
+      "cluster_id": 3,
+      "anomaly_score": 0.025419580074219017,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 12,
+      "cluster_id": 1,
+      "anomaly_score": 0.10758603894860833,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 13,
+      "cluster_id": 3,
+      "anomaly_score": 0.01873777439002141,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 14,
+      "cluster_id": 1,
+      "anomaly_score": 0.07664602582416652,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 15,
+      "cluster_id": 3,
+      "anomaly_score": 0.022433870644568272,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 16,
+      "cluster_id": 1,
+      "anomaly_score": 0.021129172742991937,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 17,
+      "cluster_id": 3,
+      "anomaly_score": 0.05564964605306777,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 18,
+      "cluster_id": 1,
+      "anomaly_score": 0.033571494047465275,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 19,
+      "cluster_id": 3,
+      "anomaly_score": 0.019616972875076757,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 20,
+      "cluster_id": 1,
+      "anomaly_score": 0.025251410357278754,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 21,
+      "cluster_id": 3,
+      "anomaly_score": 0.04283731114317458,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 22,
+      "cluster_id": 1,
+      "anomaly_score": 0.08995670427153504,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 23,
+      "cluster_id": 3,
+      "anomaly_score": 0.013976562058182897,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 24,
+      "cluster_id": 1,
+      "anomaly_score": 0.015225329229447864,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 25,
+      "cluster_id": 3,
+      "anomaly_score": 0.017928061507621884,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 26,
+      "cluster_id": 1,
+      "anomaly_score": 0.09808700914872699,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 27,
+      "cluster_id": 3,
+      "anomaly_score": 0.019258656951168244,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 28,
+      "cluster_id": 1,
+      "anomaly_score": 0.03025080965510369,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 29,
+      "cluster_id": 3,
+      "anomaly_score": 0.018818960582017933,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 30,
+      "cluster_id": 1,
+      "anomaly_score": 0.04413441039360032,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 31,
+      "cluster_id": 3,
+      "anomaly_score": 0.017592343823940263,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 32,
+      "cluster_id": 1,
+      "anomaly_score": 0.10453221586053861,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 33,
+      "cluster_id": 3,
+      "anomaly_score": 0.028120976531663438,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 34,
+      "cluster_id": 1,
+      "anomaly_score": 0.0156505648039209,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 35,
+      "cluster_id": 3,
+      "anomaly_score": 0.01603834164128659,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 36,
+      "cluster_id": 1,
+      "anomaly_score": 0.047073163655191166,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 37,
+      "cluster_id": 3,
+      "anomaly_score": 0.011209108028734345,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 38,
+      "cluster_id": 1,
+      "anomaly_score": 0.06841120223533002,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 39,
+      "cluster_id": 3,
+      "anomaly_score": 0.013581969370631695,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 40,
+      "cluster_id": 1,
+      "anomaly_score": 0.06868178946138191,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 41,
+      "cluster_id": 3,
+      "anomaly_score": 0.01782388606503286,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 42,
+      "cluster_id": 1,
+      "anomaly_score": 0.08944210860747091,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 43,
+      "cluster_id": 3,
+      "anomaly_score": 0.017561130463481255,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 44,
+      "cluster_id": 1,
+      "anomaly_score": 0.012288451988373215,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 45,
+      "cluster_id": 3,
+      "anomaly_score": 0.009285104855002254,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 46,
+      "cluster_id": 1,
+      "anomaly_score": 0.030722790675706477,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 47,
+      "cluster_id": 3,
+      "anomaly_score": 0.01623512376730345,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 48,
+      "cluster_id": 1,
+      "anomaly_score": 0.07303307084995991,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 49,
+      "cluster_id": 3,
+      "anomaly_score": 0.00767152619299556,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 50,
+      "cluster_id": 1,
+      "anomaly_score": 0.010493167586576566,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 51,
+      "cluster_id": 3,
+      "anomaly_score": 0.014959203006183967,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 52,
+      "cluster_id": 1,
+      "anomaly_score": 0.03761706786803274,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 53,
+      "cluster_id": 3,
+      "anomaly_score": 0.006988436722436576,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 54,
+      "cluster_id": 1,
+      "anomaly_score": 0.021693447264452728,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 55,
+      "cluster_id": 3,
+      "anomaly_score": 0.04393577111462911,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 56,
+      "cluster_id": 1,
+      "anomaly_score": 0.06756097589467647,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 57,
+      "cluster_id": 3,
+      "anomaly_score": 0.01298051089365907,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 58,
+      "cluster_id": 1,
+      "anomaly_score": 0.02627239401735077,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 59,
+      "cluster_id": 3,
+      "anomaly_score": 0.010617383195463861,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 60,
+      "cluster_id": 1,
+      "anomaly_score": 0.013674041586569822,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 61,
+      "cluster_id": 3,
+      "anomaly_score": 0.012048321396358344,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 62,
+      "cluster_id": 1,
+      "anomaly_score": 0.08858874000060579,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 63,
+      "cluster_id": 3,
+      "anomaly_score": 0.022080467859840542,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 64,
+      "cluster_id": 1,
+      "anomaly_score": 0.0298744444808424,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 65,
+      "cluster_id": 3,
+      "anomaly_score": 0.006149947883266259,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 66,
+      "cluster_id": 1,
+      "anomaly_score": 0.0754224807756293,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 67,
+      "cluster_id": 3,
+      "anomaly_score": 0.01241013950239992,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 68,
+      "cluster_id": 1,
+      "anomaly_score": 0.03712088105856118,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 69,
+      "cluster_id": 3,
+      "anomaly_score": 0.00903493676861148,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 70,
+      "cluster_id": 1,
+      "anomaly_score": 0.06372893800805615,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 71,
+      "cluster_id": 3,
+      "anomaly_score": 0.007968476322818075,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 72,
+      "cluster_id": 1,
+      "anomaly_score": 0.10237942564065261,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 73,
+      "cluster_id": 3,
+      "anomaly_score": 0.008079890397813644,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 74,
+      "cluster_id": 1,
+      "anomaly_score": 0.06549070851084145,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 75,
+      "cluster_id": 3,
+      "anomaly_score": 0.00887814546497672,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 76,
+      "cluster_id": 1,
+      "anomaly_score": 0.02311235757556529,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 77,
+      "cluster_id": 3,
+      "anomaly_score": 0.009797957487294827,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 78,
+      "cluster_id": 1,
+      "anomaly_score": 0.012765318627250112,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 79,
+      "cluster_id": 3,
+      "anomaly_score": 0.0029704071537552017,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 80,
+      "cluster_id": 1,
+      "anomaly_score": 0.06896874123966254,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 81,
+      "cluster_id": 3,
+      "anomaly_score": 0.008905085201912914,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 82,
+      "cluster_id": 1,
+      "anomaly_score": 0.033056595106987385,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 83,
+      "cluster_id": 3,
+      "anomaly_score": 0.012853574983373472,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 84,
+      "cluster_id": 1,
+      "anomaly_score": 0.09222983928325634,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 85,
+      "cluster_id": 3,
+      "anomaly_score": 0.012606342097301326,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 86,
+      "cluster_id": 1,
+      "anomaly_score": 0.015695951844999063,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 87,
+      "cluster_id": 3,
+      "anomaly_score": 0.005566786946563891,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 88,
+      "cluster_id": 1,
+      "anomaly_score": 0.022364584138500447,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 89,
+      "cluster_id": 3,
+      "anomaly_score": 0.08803650282831202,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 90,
+      "cluster_id": 1,
+      "anomaly_score": 0.025589308661973197,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 91,
+      "cluster_id": 3,
+      "anomaly_score": 0.008480338876356406,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 92,
+      "cluster_id": 1,
+      "anomaly_score": 0.06528586605339462,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 93,
+      "cluster_id": 3,
+      "anomaly_score": 0.004606860894407783,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 94,
+      "cluster_id": 1,
+      "anomaly_score": 0.046930556326199115,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 95,
+      "cluster_id": 3,
+      "anomaly_score": 0.05422999420566989,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 96,
+      "cluster_id": 1,
+      "anomaly_score": 0.01320316314246552,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 97,
+      "cluster_id": 3,
+      "anomaly_score": 0.005042635737911163,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 98,
+      "cluster_id": 1,
+      "anomaly_score": 0.05172969323974032,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 99,
+      "cluster_id": 3,
+      "anomaly_score": 0.004265929421424629,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 100,
+      "cluster_id": 1,
+      "anomaly_score": 0.0,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 101,
+      "cluster_id": 3,
+      "anomaly_score": 0.012853558642939524,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 102,
+      "cluster_id": 1,
+      "anomaly_score": 0.04093626749597424,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 103,
+      "cluster_id": 3,
+      "anomaly_score": 0.0053072341857060305,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 104,
+      "cluster_id": 1,
+      "anomaly_score": 0.10140541108146092,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 105,
+      "cluster_id": 3,
+      "anomaly_score": 0.012758139230513107,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 106,
+      "cluster_id": 1,
+      "anomaly_score": 0.08396184955467088,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 107,
+      "cluster_id": 3,
+      "anomaly_score": 0.007503446624257486,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 108,
+      "cluster_id": 1,
+      "anomaly_score": 0.09540680670850486,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 109,
+      "cluster_id": 3,
+      "anomaly_score": 0.0042286725004955575,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 110,
+      "cluster_id": 1,
+      "anomaly_score": 0.029307064991360363,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 111,
+      "cluster_id": 3,
+      "anomaly_score": 0.0006345221513719242,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 112,
+      "cluster_id": 1,
+      "anomaly_score": 0.08338561581711042,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 113,
+      "cluster_id": 3,
+      "anomaly_score": 0.0005677153094295548,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 114,
+      "cluster_id": 1,
+      "anomaly_score": 0.055619975696927004,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 115,
+      "cluster_id": 3,
+      "anomaly_score": 0.010600977644819397,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 116,
+      "cluster_id": 1,
+      "anomaly_score": 0.0876605263733109,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 117,
+      "cluster_id": 3,
+      "anomaly_score": 0.013257601136185975,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 118,
+      "cluster_id": 1,
+      "anomaly_score": 0.08086435190139218,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 119,
+      "cluster_id": 3,
+      "anomaly_score": 0.004296083744304315,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 120,
+      "cluster_id": 1,
+      "anomaly_score": 0.030592140949767595,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 121,
+      "cluster_id": 3,
+      "anomaly_score": 0.007095781808427028,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 122,
+      "cluster_id": 1,
+      "anomaly_score": 0.10684832674701292,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 123,
+      "cluster_id": 3,
+      "anomaly_score": 0.00702492910857178,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 124,
+      "cluster_id": 1,
+      "anomaly_score": 0.023316284379434508,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 125,
+      "cluster_id": 3,
+      "anomaly_score": 0.011121259405493278,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 126,
+      "cluster_id": 1,
+      "anomaly_score": 0.05830862653256208,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 127,
+      "cluster_id": 3,
+      "anomaly_score": 0.017025206542776228,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 128,
+      "cluster_id": 1,
+      "anomaly_score": 0.07887905973180674,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 129,
+      "cluster_id": 3,
+      "anomaly_score": 0.01169188120689037,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 130,
+      "cluster_id": 1,
+      "anomaly_score": 0.0803581473758256,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 131,
+      "cluster_id": 3,
+      "anomaly_score": 0.0024514767716082957,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 132,
+      "cluster_id": 1,
+      "anomaly_score": 0.01382318731664506,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 133,
+      "cluster_id": 3,
+      "anomaly_score": 0.01089925703899032,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 134,
+      "cluster_id": 1,
+      "anomaly_score": 0.005850997834526171,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 135,
+      "cluster_id": 3,
+      "anomaly_score": 0.006627083444594809,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 136,
+      "cluster_id": 1,
+      "anomaly_score": 0.02621375535962356,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 137,
+      "cluster_id": 3,
+      "anomaly_score": 0.006883701009686054,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 138,
+      "cluster_id": 1,
+      "anomaly_score": 0.00889422419123817,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 139,
+      "cluster_id": 3,
+      "anomaly_score": 0.0103461505603145,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 140,
+      "cluster_id": 1,
+      "anomaly_score": 0.0390029834606345,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 141,
+      "cluster_id": 3,
+      "anomaly_score": 0.008831461434807857,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 142,
+      "cluster_id": 1,
+      "anomaly_score": 0.06539580318367008,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 143,
+      "cluster_id": 3,
+      "anomaly_score": 0.009463954232416123,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 144,
+      "cluster_id": 1,
+      "anomaly_score": 0.0076687977209095185,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 145,
+      "cluster_id": 3,
+      "anomaly_score": 0.012762705268600082,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 146,
+      "cluster_id": 1,
+      "anomaly_score": 0.005368186267925254,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 147,
+      "cluster_id": 3,
+      "anomaly_score": 0.015281031409553853,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 148,
+      "cluster_id": 1,
+      "anomaly_score": 0.07892343973552421,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 149,
+      "cluster_id": 3,
+      "anomaly_score": 0.03002420565804674,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 150,
+      "cluster_id": 1,
+      "anomaly_score": 0.09699003928164338,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 151,
+      "cluster_id": 3,
+      "anomaly_score": 0.008831673542007567,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 152,
+      "cluster_id": 1,
+      "anomaly_score": 0.014396455269220045,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 153,
+      "cluster_id": 3,
+      "anomaly_score": 0.008680887356317384,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 154,
+      "cluster_id": 1,
+      "anomaly_score": 0.07468622807717866,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 155,
+      "cluster_id": 3,
+      "anomaly_score": 0.012467206716177369,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 156,
+      "cluster_id": 1,
+      "anomaly_score": 0.05937517345813293,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 157,
+      "cluster_id": 3,
+      "anomaly_score": 0.010929450700675499,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 158,
+      "cluster_id": 1,
+      "anomaly_score": 0.04985846181934765,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 159,
+      "cluster_id": 3,
+      "anomaly_score": 0.017059882759882797,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 160,
+      "cluster_id": 1,
+      "anomaly_score": 0.06345581155322924,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 161,
+      "cluster_id": 3,
+      "anomaly_score": 0.015021915616408055,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 162,
+      "cluster_id": 1,
+      "anomaly_score": 0.10891775526957247,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 163,
+      "cluster_id": 3,
+      "anomaly_score": 0.017197623940993705,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 164,
+      "cluster_id": 1,
+      "anomaly_score": 0.09566430810648556,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 165,
+      "cluster_id": 3,
+      "anomaly_score": 0.011253308042240957,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 166,
+      "cluster_id": 1,
+      "anomaly_score": 0.11117027552409318,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 167,
+      "cluster_id": 3,
+      "anomaly_score": 0.01534082840062041,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 168,
+      "cluster_id": 1,
+      "anomaly_score": 0.09467029375644478,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 169,
+      "cluster_id": 3,
+      "anomaly_score": 0.012280106096411465,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 170,
+      "cluster_id": 1,
+      "anomaly_score": 0.07181717053268905,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 171,
+      "cluster_id": 3,
+      "anomaly_score": 0.013025513514433566,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 172,
+      "cluster_id": 1,
+      "anomaly_score": 0.012205027122379567,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 173,
+      "cluster_id": 3,
+      "anomaly_score": 0.015800105791594594,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 174,
+      "cluster_id": 1,
+      "anomaly_score": 0.018217845124106544,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 175,
+      "cluster_id": 3,
+      "anomaly_score": 0.0206764559790124,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 176,
+      "cluster_id": 1,
+      "anomaly_score": 0.10392483990846474,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 177,
+      "cluster_id": 3,
+      "anomaly_score": 0.02037198482282836,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 178,
+      "cluster_id": 1,
+      "anomaly_score": 0.07590191544971399,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 179,
+      "cluster_id": 3,
+      "anomaly_score": 0.017012672401900533,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 180,
+      "cluster_id": 1,
+      "anomaly_score": 0.049545567081462606,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 181,
+      "cluster_id": 3,
+      "anomaly_score": 0.021193986362587236,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 182,
+      "cluster_id": 1,
+      "anomaly_score": 0.020824725289356055,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 183,
+      "cluster_id": 3,
+      "anomaly_score": 0.018146070257404893,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 184,
+      "cluster_id": 1,
+      "anomaly_score": 0.026769767728104996,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 185,
+      "cluster_id": 3,
+      "anomaly_score": 0.015198663204281431,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 186,
+      "cluster_id": 1,
+      "anomaly_score": 0.11221853621660632,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 187,
+      "cluster_id": 3,
+      "anomaly_score": 0.015282131034956086,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 188,
+      "cluster_id": 1,
+      "anomaly_score": 0.0987331952087503,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 189,
+      "cluster_id": 3,
+      "anomaly_score": 0.017323915122371848,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 190,
+      "cluster_id": 1,
+      "anomaly_score": 0.0984790333242949,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 191,
+      "cluster_id": 3,
+      "anomaly_score": 0.019586078805840592,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 192,
+      "cluster_id": 1,
+      "anomaly_score": 0.06419267888042914,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 193,
+      "cluster_id": 3,
+      "anomaly_score": 0.01789296213909572,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 194,
+      "cluster_id": 1,
+      "anomaly_score": 0.01941924145283612,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 195,
+      "cluster_id": 3,
+      "anomaly_score": 0.0427181982110993,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 196,
+      "cluster_id": 1,
+      "anomaly_score": 0.09275080719037694,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 197,
+      "cluster_id": 3,
+      "anomaly_score": 0.019620624603904138,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 198,
+      "cluster_id": 1,
+      "anomaly_score": 0.057884005093098094,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 199,
+      "cluster_id": 3,
+      "anomaly_score": 0.02163394379755547,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 200,
+      "cluster_id": 1,
+      "anomaly_score": 0.06643661754621671,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 201,
+      "cluster_id": 0,
+      "anomaly_score": 0.1905027701235788,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 202,
+      "cluster_id": 0,
+      "anomaly_score": 0.21301176113277634,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 203,
+      "cluster_id": 0,
+      "anomaly_score": 0.18536236595255773,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 204,
+      "cluster_id": 0,
+      "anomaly_score": 0.21100153632321172,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 205,
+      "cluster_id": 0,
+      "anomaly_score": 0.19135770623651593,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 206,
+      "cluster_id": 0,
+      "anomaly_score": 0.21301404478926694,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 207,
+      "cluster_id": 0,
+      "anomaly_score": 0.21172476635124052,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 208,
+      "cluster_id": 0,
+      "anomaly_score": 0.21275818506327146,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 209,
+      "cluster_id": 0,
+      "anomaly_score": 0.20903181893320316,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 210,
+      "cluster_id": 0,
+      "anomaly_score": 0.2059867974173158,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 211,
+      "cluster_id": 0,
+      "anomaly_score": 0.18072725404835477,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 212,
+      "cluster_id": 0,
+      "anomaly_score": 0.20975391017946313,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 213,
+      "cluster_id": 0,
+      "anomaly_score": 0.17983323055577918,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 214,
+      "cluster_id": 0,
+      "anomaly_score": 0.2108279999985992,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 215,
+      "cluster_id": 0,
+      "anomaly_score": 0.18040583077512024,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 216,
+      "cluster_id": 0,
+      "anomaly_score": 0.20593647351743521,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 217,
+      "cluster_id": 0,
+      "anomaly_score": 0.20643804395045345,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 218,
+      "cluster_id": 0,
+      "anomaly_score": 0.2106703776879059,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 219,
+      "cluster_id": 0,
+      "anomaly_score": 0.17913919887148325,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 220,
+      "cluster_id": 0,
+      "anomaly_score": 0.20933958711361353,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 221,
+      "cluster_id": 0,
+      "anomaly_score": 0.19478169250452554,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 222,
+      "cluster_id": 0,
+      "anomaly_score": 0.20451077967124567,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 223,
+      "cluster_id": 0,
+      "anomaly_score": 0.20721129280846878,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 224,
+      "cluster_id": 0,
+      "anomaly_score": 0.20443364997672098,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 225,
+      "cluster_id": 0,
+      "anomaly_score": 0.19933524338905695,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 226,
+      "cluster_id": 0,
+      "anomaly_score": 0.20658172943471995,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 227,
+      "cluster_id": 0,
+      "anomaly_score": 0.2578482438584696,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 228,
+      "cluster_id": 0,
+      "anomaly_score": 0.20188487566983707,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 229,
+      "cluster_id": 0,
+      "anomaly_score": 0.2634774692264105,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 230,
+      "cluster_id": 0,
+      "anomaly_score": 0.2011445022010222,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 231,
+      "cluster_id": 0,
+      "anomaly_score": 0.18097554860229909,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 232,
+      "cluster_id": 0,
+      "anomaly_score": 0.20525275379497473,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 233,
+      "cluster_id": 0,
+      "anomaly_score": 0.20152595220512676,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 234,
+      "cluster_id": 0,
+      "anomaly_score": 0.2034501145511972,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 235,
+      "cluster_id": 0,
+      "anomaly_score": 0.18993147629850787,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 236,
+      "cluster_id": 0,
+      "anomaly_score": 0.20144566737043937,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 237,
+      "cluster_id": 0,
+      "anomaly_score": 0.17511860163534687,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 238,
+      "cluster_id": 0,
+      "anomaly_score": 0.20299649543280854,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 239,
+      "cluster_id": 0,
+      "anomaly_score": 0.19960756340240898,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 240,
+      "cluster_id": 0,
+      "anomaly_score": 0.19817106422001263,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 241,
+      "cluster_id": 0,
+      "anomaly_score": 0.17060373747355126,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 242,
+      "cluster_id": 0,
+      "anomaly_score": 0.20298456206097235,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 243,
+      "cluster_id": 0,
+      "anomaly_score": 0.17423643089018961,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 244,
+      "cluster_id": 0,
+      "anomaly_score": 0.19389194213351008,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 245,
+      "cluster_id": 0,
+      "anomaly_score": 0.17133019218441656,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 246,
+      "cluster_id": 0,
+      "anomaly_score": 0.20065021967321442,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 247,
+      "cluster_id": 0,
+      "anomaly_score": 0.4079094465877987,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 248,
+      "cluster_id": 0,
+      "anomaly_score": 0.20073651739172377,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 249,
+      "cluster_id": 0,
+      "anomaly_score": 0.21775176203008684,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 250,
+      "cluster_id": 0,
+      "anomaly_score": 0.20019322575483056,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 251,
+      "cluster_id": 0,
+      "anomaly_score": 0.35166710229079623,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 252,
+      "cluster_id": 0,
+      "anomaly_score": 0.19721248699114519,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 253,
+      "cluster_id": 0,
+      "anomaly_score": 0.1732602849678224,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 254,
+      "cluster_id": 0,
+      "anomaly_score": 0.19920753155017332,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 255,
+      "cluster_id": 0,
+      "anomaly_score": 0.4940878697933318,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 256,
+      "cluster_id": 0,
+      "anomaly_score": 0.19999777999734694,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 257,
+      "cluster_id": 0,
+      "anomaly_score": 0.4871450697755954,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 258,
+      "cluster_id": 0,
+      "anomaly_score": 0.19490125249108428,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 259,
+      "cluster_id": 0,
+      "anomaly_score": 0.16743290225594878,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 260,
+      "cluster_id": 0,
+      "anomaly_score": 0.1999477636974558,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 261,
+      "cluster_id": 0,
+      "anomaly_score": 0.17610480889741895,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 262,
+      "cluster_id": 0,
+      "anomaly_score": 0.19795877260824046,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 263,
+      "cluster_id": 0,
+      "anomaly_score": 0.2338630980035743,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 264,
+      "cluster_id": 0,
+      "anomaly_score": 0.20101687268592552,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 265,
+      "cluster_id": 0,
+      "anomaly_score": 0.5776051028412809,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 266,
+      "cluster_id": 0,
+      "anomaly_score": 0.20139842824671841,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 267,
+      "cluster_id": 0,
+      "anomaly_score": 0.2143801577547955,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 268,
+      "cluster_id": 0,
+      "anomaly_score": 0.20283429142637702,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 269,
+      "cluster_id": 0,
+      "anomaly_score": 0.5447062208792719,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 270,
+      "cluster_id": 0,
+      "anomaly_score": 0.20424055058938517,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 271,
+      "cluster_id": 0,
+      "anomaly_score": 0.30800675428869495,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 272,
+      "cluster_id": 0,
+      "anomaly_score": 0.20770950124971857,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 273,
+      "cluster_id": 0,
+      "anomaly_score": 0.18802146627017707,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 274,
+      "cluster_id": 0,
+      "anomaly_score": 0.20501422125533703,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 275,
+      "cluster_id": 0,
+      "anomaly_score": 0.20043623788216136,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 276,
+      "cluster_id": 0,
+      "anomaly_score": 0.20773483933372763,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 277,
+      "cluster_id": 0,
+      "anomaly_score": 0.17890893705198543,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 278,
+      "cluster_id": 0,
+      "anomaly_score": 0.20469077970233965,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 279,
+      "cluster_id": 0,
+      "anomaly_score": 0.45831965702541855,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 280,
+      "cluster_id": 0,
+      "anomaly_score": 0.20994088507038738,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 281,
+      "cluster_id": 0,
+      "anomaly_score": 0.18258287237229293,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 282,
+      "cluster_id": 0,
+      "anomaly_score": 0.21173016177290038,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 283,
+      "cluster_id": 0,
+      "anomaly_score": 0.1853810627575956,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 284,
+      "cluster_id": 0,
+      "anomaly_score": 0.2125385765581456,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 285,
+      "cluster_id": 0,
+      "anomaly_score": 0.20321787385356538,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 286,
+      "cluster_id": 0,
+      "anomaly_score": 0.2131638225877513,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 287,
+      "cluster_id": 0,
+      "anomaly_score": 0.18784855058089972,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 288,
+      "cluster_id": 0,
+      "anomaly_score": 0.21407029650904247,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 289,
+      "cluster_id": 0,
+      "anomaly_score": 0.2736736248836442,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 290,
+      "cluster_id": 0,
+      "anomaly_score": 0.21409742381290606,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 291,
+      "cluster_id": 0,
+      "anomaly_score": 0.1960715696184961,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 292,
+      "cluster_id": 0,
+      "anomaly_score": 0.21649114375711312,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 293,
+      "cluster_id": 0,
+      "anomaly_score": 0.19776697950550387,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 294,
+      "cluster_id": 0,
+      "anomaly_score": 0.21409994007258082,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 295,
+      "cluster_id": 0,
+      "anomaly_score": 0.5576287064571923,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 296,
+      "cluster_id": 0,
+      "anomaly_score": 0.2182661517323444,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 297,
+      "cluster_id": 0,
+      "anomaly_score": 0.8139699652553465,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 298,
+      "cluster_id": 0,
+      "anomaly_score": 0.22878592504023296,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 299,
+      "cluster_id": 0,
+      "anomaly_score": 0.5599885135553677,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 300,
+      "cluster_id": 0,
+      "anomaly_score": 0.2348143515397349,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 301,
+      "cluster_id": 2,
+      "anomaly_score": 0.127951407828116,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 302,
+      "cluster_id": 2,
+      "anomaly_score": 0.44543742094125904,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 303,
+      "cluster_id": 2,
+      "anomaly_score": 0.1206224520623908,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 304,
+      "cluster_id": 2,
+      "anomaly_score": 0.1492191235744742,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 305,
+      "cluster_id": 2,
+      "anomaly_score": 0.2566270048766479,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 306,
+      "cluster_id": 2,
+      "anomaly_score": 0.17159951716167446,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 307,
+      "cluster_id": 2,
+      "anomaly_score": 0.13950274908770785,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 308,
+      "cluster_id": 2,
+      "anomaly_score": 0.12512232504092782,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 309,
+      "cluster_id": 2,
+      "anomaly_score": 0.11040263639179865,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 310,
+      "cluster_id": 2,
+      "anomaly_score": 0.1427214265407153,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 311,
+      "cluster_id": 2,
+      "anomaly_score": 0.1467634651014075,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 312,
+      "cluster_id": 2,
+      "anomaly_score": 0.12164742722410825,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 313,
+      "cluster_id": 2,
+      "anomaly_score": 0.12001367713128817,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 314,
+      "cluster_id": 2,
+      "anomaly_score": 0.11983193781642688,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 315,
+      "cluster_id": 2,
+      "anomaly_score": 0.14466769261031287,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 316,
+      "cluster_id": 2,
+      "anomaly_score": 0.14945701473982145,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 317,
+      "cluster_id": 2,
+      "anomaly_score": 0.10806534800385463,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 318,
+      "cluster_id": 2,
+      "anomaly_score": 0.1066444755314882,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 319,
+      "cluster_id": 2,
+      "anomaly_score": 0.14652922112954228,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 320,
+      "cluster_id": 2,
+      "anomaly_score": 0.16071803164126508,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 321,
+      "cluster_id": 2,
+      "anomaly_score": 0.14197570188406972,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 322,
+      "cluster_id": 2,
+      "anomaly_score": 0.12829858604224534,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 323,
+      "cluster_id": 2,
+      "anomaly_score": 0.3394345910512267,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 324,
+      "cluster_id": 2,
+      "anomaly_score": 0.1339316794447358,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 325,
+      "cluster_id": 2,
+      "anomaly_score": 0.123257340447031,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 326,
+      "cluster_id": 2,
+      "anomaly_score": 0.1366399981266084,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 327,
+      "cluster_id": 2,
+      "anomaly_score": 0.14948822641801354,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 328,
+      "cluster_id": 2,
+      "anomaly_score": 0.13109708766383785,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 329,
+      "cluster_id": 2,
+      "anomaly_score": 0.14320070218812095,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 330,
+      "cluster_id": 2,
+      "anomaly_score": 0.1486449694941673,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 331,
+      "cluster_id": 2,
+      "anomaly_score": 0.23105185771832726,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 332,
+      "cluster_id": 2,
+      "anomaly_score": 0.23630510681364864,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 333,
+      "cluster_id": 2,
+      "anomaly_score": 0.23487629048356803,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 334,
+      "cluster_id": 2,
+      "anomaly_score": 0.24481251272239188,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 335,
+      "cluster_id": 2,
+      "anomaly_score": 0.22601470940897336,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 336,
+      "cluster_id": 2,
+      "anomaly_score": 0.23531404545657292,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 337,
+      "cluster_id": 2,
+      "anomaly_score": 0.24164653986077453,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 338,
+      "cluster_id": 2,
+      "anomaly_score": 0.2304649833409833,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 339,
+      "cluster_id": 2,
+      "anomaly_score": 0.24909257753862188,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 340,
+      "cluster_id": 2,
+      "anomaly_score": 0.23383498188613674,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 341,
+      "cluster_id": 2,
+      "anomaly_score": 0.23708225598897809,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 342,
+      "cluster_id": 2,
+      "anomaly_score": 0.23305725975908909,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 343,
+      "cluster_id": 2,
+      "anomaly_score": 0.2325830233860012,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 344,
+      "cluster_id": 2,
+      "anomaly_score": 0.2388520908898457,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 345,
+      "cluster_id": 2,
+      "anomaly_score": 0.23279447532140726,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 346,
+      "cluster_id": 2,
+      "anomaly_score": 0.234735805393533,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 347,
+      "cluster_id": 2,
+      "anomaly_score": 0.24457238445934376,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 348,
+      "cluster_id": 2,
+      "anomaly_score": 0.2403585045264072,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 349,
+      "cluster_id": 2,
+      "anomaly_score": 0.2358721898856086,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 350,
+      "cluster_id": 2,
+      "anomaly_score": 0.24567715075882593,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 351,
+      "cluster_id": 2,
+      "anomaly_score": 0.24796585960283055,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 352,
+      "cluster_id": 2,
+      "anomaly_score": 0.24129566446119516,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 353,
+      "cluster_id": 2,
+      "anomaly_score": 0.2396770761264531,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 354,
+      "cluster_id": 2,
+      "anomaly_score": 0.2312056284422713,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 355,
+      "cluster_id": 2,
+      "anomaly_score": 0.24307942722205053,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 356,
+      "cluster_id": 4,
+      "anomaly_score": 0.009706649922535233,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 357,
+      "cluster_id": 2,
+      "anomaly_score": 0.9999798595632095,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 358,
+      "cluster_id": 4,
+      "anomaly_score": 0.0011607950771745138,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 359,
+      "cluster_id": 2,
+      "anomaly_score": 0.9999828072443692,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 360,
+      "cluster_id": 4,
+      "anomaly_score": 0.0068478432283073905,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 361,
+      "cluster_id": 2,
+      "anomaly_score": 0.9999891066069609,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 362,
+      "cluster_id": 4,
+      "anomaly_score": 0.02518726772426294,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 363,
+      "cluster_id": 2,
+      "anomaly_score": 0.9999993905013973,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 364,
+      "cluster_id": 4,
+      "anomaly_score": 0.016012311721026337,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 365,
+      "cluster_id": 2,
+      "anomaly_score": 1.0,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 366,
+      "cluster_id": 2,
+      "anomaly_score": 0.4385511121104994,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 367,
+      "cluster_id": 2,
+      "anomaly_score": 0.3499728669583305,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 368,
+      "cluster_id": 2,
+      "anomaly_score": 0.17757479867463014,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 369,
+      "cluster_id": 2,
+      "anomaly_score": 0.3500766135096959,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 370,
+      "cluster_id": 2,
+      "anomaly_score": 0.6632519394868414,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 371,
+      "cluster_id": 2,
+      "anomaly_score": 0.3510241013639719,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 372,
+      "cluster_id": 2,
+      "anomaly_score": 0.17889512446348255,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 373,
+      "cluster_id": 2,
+      "anomaly_score": 0.35092698242560566,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 374,
+      "cluster_id": 2,
+      "anomaly_score": 0.18040865281217708,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 375,
+      "cluster_id": 2,
+      "anomaly_score": 0.3516846876490179,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 376,
+      "cluster_id": 2,
+      "anomaly_score": 0.18509733810047546,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 377,
+      "cluster_id": 2,
+      "anomaly_score": 0.35168915072932216,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 378,
+      "cluster_id": 2,
+      "anomaly_score": 0.1840529351418336,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 379,
+      "cluster_id": 2,
+      "anomaly_score": 0.3517371410066163,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 380,
+      "cluster_id": 2,
+      "anomaly_score": 0.21267114721055358,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 381,
+      "cluster_id": 2,
+      "anomaly_score": 0.35206836246278833,
+      "is_anomaly": true
+    },
+    {
+      "packet_number": 382,
+      "cluster_id": 2,
+      "anomaly_score": 0.18038111691963,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 383,
+      "cluster_id": 2,
+      "anomaly_score": 0.35080966307931427,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 384,
+      "cluster_id": 2,
+      "anomaly_score": 0.18620830548275247,
+      "is_anomaly": false
+    },
+    {
+      "packet_number": 385,
+      "cluster_id": 2,
+      "anomaly_score": 0.3518683342122736,
+      "is_anomaly": true
+    }
+  ]
+}
