@@ -40,7 +40,9 @@ Features:
 Author: %s
 ]], plugin_info.version, plugin_info.author)
     
-    new_dialog("About K-means Analyzer", function() end, about_text)
+    local tw_about = TextWindow.new("About K-means Analyzer")
+    tw_about:set(about_text)
+    tw_about:add_button("OK", function() tw_about:close() end)
 end
 
 -- Function to get current capture file path
@@ -75,8 +77,9 @@ function analyze_current_file()
     local script_path = check_analysis_script()
     
     if not script_path then
-        -- Use new_dialog instead of TextWindow for better compatibility
-        new_dialog("K-means Analysis - Script Not Found", function() end, [[
+        -- Use TextWindow instead of new_dialog for better compatibility
+        local tw_error = TextWindow.new("K-means Analysis - Script Not Found")
+        tw_error:set([[
 ❌ Analysis Script Not Found
 
 The K-means analysis script is missing. Expected locations:
@@ -88,53 +91,19 @@ Please ensure the script is installed and executable.
 You can also run the analysis manually from Terminal:
 ./simple_analysis.sh
 ]])
+        tw_error:add_button("OK", function() tw_error:close() end)
         return
     end
     
     -- Always assume we can analyze - the script will handle detection
     local current_file = "menu_triggered"
     
-    -- Show confirmation dialog
-    local info_text = string.format([[
-🔬 K-means Anomaly Analysis
-
-Ready to launch analysis tool.
-
-This will:
-✅ Auto-detect capture files (opened in Wireshark or in common locations)
-✅ Extract packet features (15 dimensions)
-✅ Apply K-means clustering 
-✅ Identify network anomalies
-✅ Generate detailed analysis report
-
-The analysis will run in Terminal where you can see progress and results.
-
-Click OK to start analysis...
-]])
-    
-    new_dialog("K-means Analysis", function()
-        launch_analysis(script_path, current_file)
-    end, info_text)
+    -- Launch analysis directly with minimal confirmation
+    launch_analysis(script_path, current_file)
 end
 
 -- Function to launch external analysis
 function launch_analysis(script_path, capture_file)
-    -- Show initial progress message using new_dialog
-    new_dialog("K-means Analysis - Starting", function() end, [[
-🔄 Analysis Starting...
-
-The K-means analysis is being launched in Terminal.
-This may take a few moments depending on file size.
-
-✅ Auto-detecting capture files
-✅ Extracting packet features
-✅ Applying clustering algorithm  
-✅ Detecting anomalies
-✅ Generating report
-
-Check the Terminal for detailed progress and results.
-]])
-    
     -- Launch the script without trying to pass specific file path
     -- Let the script handle auto-detection
     local cmd = string.format('osascript -e "tell application \\"Terminal\\" to do script \\"%s\\""', script_path)
@@ -142,22 +111,10 @@ Check the Terminal for detailed progress and results.
     -- Execute command
     os.execute(cmd)
     
-    -- Show completion message
-    new_dialog("K-means Analysis - Launched", function() end, [[
-✅ Analysis Launched Successfully!
-
-The K-means analysis has been started in Terminal.
-
-🔬 What's happening:
-• Auto-detection of capture files (Wireshark opened files, common locations)
-• Real packet data extraction
-• Feature engineering (15 dimensions)
-• K-means clustering (auto K selection)
-• Anomaly detection and scoring
-• Detailed results generation
-
-📊 Results will appear in the Terminal window.
-]])
+    -- Show simple completion message
+    local tw_complete = TextWindow.new("K-means Analysis - Launched")
+    tw_complete:set("Analysis launched in Terminal! Check Terminal window for progress and results.")
+    tw_complete:add_button("OK", function() tw_complete:close() end)
 end
 
 -- Initialize plugin
